@@ -1,0 +1,59 @@
+The Nashville Airbnb dataset is a merger dataset of three individual datasets - listings, reviews and neighbourhoods data from the Airbnb data archives . The dataset has the following variables: 
+
+1. id: Airbnb's unique identifier for the listing
+
+2. name: Name of the listing + Detailed Description
+
+3. host_id: Airbnb's unique identifier for the host
+
+4. host_name: The Host's name
+
+5. neighbourhood_group: The neighbourhood as geocoded using the latitude and longitude.
+
+6. neighbourhood: The listing neighboirhood - there are 35 distinct neighbourhoods.
+
+7. latitude: Coordinate data via the World Geodetic System (WGS84).
+
+8. longitude: Coordinate data via the World Geodetic System (WGS84).
+
+9. room_type: All listings are grouped into four classes - Entire place, Private room ,Shared room, ot Hotel Room.
+
+10. price: Daily price in local currency.
+
+11. minimum_nights: Minimum number of night stay for the listing.
+
+12. number_of_reviews: The number of reviews the listing has.
+
+13. last_review: The date of the last/newest review.
+
+14. reviews_per_month: The average number of reviews per month the listing has over the lifetime of the listing.
+
+15. calculated_host_listings_count: The number of listings the host has in the city/region.
+
+16. availability_365: The availability of the listing 365 days in the future as determined by the calendar.
+
+17. number_of_reviews_ltm: The number of reviews the listing has (in the last 12 months)
+
+18. license: The licence/permit/registration number for the listing.
+
+19. date: The date the listing was patronized.
+
+The variables listed above are not the result of feature transformation. However, the variables listed below are the result of feature engineering on the dataset, in preparation for the use of machine learning models in predicting the prices of listings.
+
+20. year: The year based on the listing's date.
+
+21. month: The month based on the listing's date.
+
+22. season: The season of year based on the listing's date - Summer, Spring, Winter and Fall.
+
+23. license: License/permit number status of a listing - yes or no.
+
+24. rating: the listing's rating out of 5. 
+
+25. bedrooms: the number of bedrooms in a listing.
+ 
+26. beds: the number of beds in a listing.
+
+27. bathrooms: the number of bathrooms in a listing.
+
+28. private_bath: The bathroom status of a listing - shared or private.
