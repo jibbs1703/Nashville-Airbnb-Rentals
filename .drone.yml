@@ -1,15 +1,10 @@
 kind: pipeline
-name: python-pipeline
+name: default
 
 steps:
 - name: test
-  image: python:3.11-slim-buster
+  image: python
   commands:
-    - pip install -r requirements.txt
-    - pytest
-
-triggers:
-- type: repo
-  event: push
-  branches:
-    - main
+  - pip install -r requirements.txt
+  - pytest
+  - print("End of Pipeline")
